@@ -1,0 +1,133 @@
+.projects-page {
+  display: flex;
+  background-color: #000;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 30px;
+  gap: 30px;
+  min-height: 100vh;
+}
+
+/* Sol: Kategoriler */
+.category-section {
+  width: 25%;
+  border-right: 1px solid #00ff00;
+  padding-right: 20px;
+}
+
+.category-section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.category-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-section li {
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #00ff00;
+}
+
+.category-section li:hover,
+.category-section li.active {
+  color: #00ffaa;
+  transform: translateX(5px);
+  font-weight: bold;
+}
+
+/* Sağ: Projeler */
+.projects-content {
+  width: 75%;
+}
+
+.projects-content h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #00ff00;
+  padding-bottom: 10px;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #111;
+  border: 1px solid #00ff00;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+  gap: 20px;
+}
+
+.project-left {
+  flex: 1;
+}
+
+.project-left h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #00ffaa;
+}
+
+.project-left ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.project-left li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.project-left a {
+  color: #00ff00;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.project-left a:hover {
+  color: #00ffaa;
+  transform: scale(1.05);
+}
+
+.project-right {
+  flex: 0 0 320px;
+}
+
+.project-right img,
+.project-right video {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #00ff00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-page {
+    flex-direction: column;
+  }
+
+  .category-section,
+  .projects-content {
+    width: 100%;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-right {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
