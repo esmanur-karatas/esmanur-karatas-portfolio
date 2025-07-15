@@ -1,5 +1,6 @@
 {
   "name": "my-portfolio",
+  "homepage": "https://esmanur-karatas.github.io/esmanur-karatas-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
