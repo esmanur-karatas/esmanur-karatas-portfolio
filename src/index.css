@@ -1,0 +1,72 @@
+
+body {
+  cursor: none;
+  background-color: #000; 
+  color: #00ff00; 
+  position: relative;
+  overflow-x: hidden;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  box-shadow: 0 0 10px 3px #00ff00;
+  transform: translate(-50%, -50%);
+  transition: width 0.15s ease, height 0.15s ease, box-shadow 0.15s ease;
+  z-index: 9999;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  box-shadow: 0 0 10px 3px #00ff00;
+  transform: translate(-50%, -50%);
+  transition: width 0.15s ease, height 0.15s ease, box-shadow 0.15s ease;
+  z-index: 9999;
+}
+
+.cursor.hovered {
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 0 20px 6px #00ffaa;
+}
+
+.cursor-arrow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #00ff00;
+  background-color: #000000;
+  clip-path: polygon(
+    0% 0%,
+    100% 50%,
+    60% 50%,
+    100% 100%,
+    0% 100%,
+    40% 50%
+  );
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: border-color 0.15s ease;
+  z-index: 9998;
+}
+
+.cursor-arrow.hovered {
+  border-color: #00ffaa;
+}

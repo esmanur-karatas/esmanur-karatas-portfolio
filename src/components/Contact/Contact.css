@@ -1,0 +1,108 @@
+.contact-section {
+  background-color: #000;
+  color: #00ff00;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-container {
+  background-color: #000;
+  border: 1px solid #00ff00;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  font-size: 16px;
+}
+
+.optional {
+  font-size: 13px;
+  color: #00aa00;
+  font-style: italic;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #000;
+  border: 1px solid #00ff00;
+  padding: 12px;
+  color: #00ff00;
+  border-radius: 6px;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.4);
+}
+
+.captcha-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.captcha-wrapper input[type="checkbox"] {
+  accent-color: #00ff00;
+  transform: scale(1.2);
+}
+
+.contact-form button {
+  background-color: #00ff00;
+  color: #000;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #00ffaa;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 600px) {
+  .contact-container {
+    padding: 25px;
+  }
+
+  .contact-title {
+    font-size: 22px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 15px;
+  }
+
+  .contact-form button {
+    font-size: 15px;
+  }
+}
