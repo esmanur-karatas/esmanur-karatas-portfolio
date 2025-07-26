@@ -5,13 +5,13 @@ It showcases my skills, projects, and contact information as a frontend develope
 
 
 
-## 🖼️ Screenshots
+## 🖼️ Screenshots and video 
 
 <img width="3178" height="1698" alt="image" src="https://github.com/user-attachments/assets/9b809f2d-6335-4b37-b0fb-00cc2ef63972" />
 
-<img width="649" height="1167" alt="image" src="https://github.com/user-attachments/assets/272468ff-6d87-4343-847c-a76f9f968402" />
 
-<img width="645" height="1158" alt="image" src="https://github.com/user-attachments/assets/430a1ee3-8387-4986-97a1-657be2556341" />
+https://github.com/user-attachments/assets/f4e9bc10-7dd1-424b-af3f-1297f5cefd1a
+
 
 
 ## 🛠️ Tech Stack
